@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
 
 const pageTitle = 'My Astro Learning Blog';
 ---
@@ -14,7 +15,7 @@ const pageTitle = 'My Astro Learning Blog';
     <title>{pageTitle}</title>
   </head>
   <body>
-    <Navigation />
+    <Header />
 
     <h1>{pageTitle}</h1>
     <h2>Hopefully something helpful and worth reading</h2>
@@ -29,5 +30,7 @@ const pageTitle = 'My Astro Learning Blog';
       This site will update as I complete more of the tutorial, so keep checking
       back and see how my journey is going!
     </p>
+
+    <Footer />
   </body>
 </html>
